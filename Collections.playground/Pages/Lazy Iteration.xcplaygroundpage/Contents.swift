@@ -2,6 +2,7 @@
 
 import Foundation
 
+///When you have a large subset of data and you want  a small subset using lazy may prove more useful
 let indexes = 1..<5000
 
 let images = indexes.lazy.filter{ index -> Bool in
