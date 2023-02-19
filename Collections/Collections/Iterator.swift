@@ -1,0 +1,48 @@
+import Foundation
+
+
+let names = ["Alex", "John", "Mary"]
+
+var nameIterator = names.makeIterator()
+//while let name = nameIterator.next(){
+//    print(name)
+//}
+
+struct Countdown: Sequence{
+    
+    let start: Int
+    
+    func makeIterator() -> some IteratorProtocol {
+        return CountdownIterator(self)
+    }
+    
+}
+
+struct CountdownIterator: IteratorProtocol{
+    let countdown: Countdown
+    var currentValue =  0
+    
+    init(_ countdown: Countdown) {
+        self.countdown = countdown
+        self.currentValue = countdown.start
+    }
+    
+    mutating func next() -> Int? {
+        if currentValue > 0 {
+            let value = currentValue
+            currentValue -= 1
+            return value
+        } else {
+            return nil
+        }
+    }
+}
+
+class TestingIterator{
+    func test(){
+        let countdown = Countdown(start: 10)
+        for count in countdown {
+            print(count)
+        }
+    }
+}
