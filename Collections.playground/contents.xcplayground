@@ -6,5 +6,6 @@
         <page name='For each and enumeration'/>
         <page name='Lazy Iteration'/>
         <page name='Reduce'/>
+        <page name='Reduce Into'/>
     </pages>
 </playground>
