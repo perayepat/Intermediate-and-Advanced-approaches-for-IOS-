@@ -3,5 +3,6 @@
     <pages>
         <page name='In And Out Functions'/>
         <page name='Nested Functions'/>
+        <page name='Functions as variables'/>
     </pages>
 </playground>
