@@ -4,5 +4,6 @@
         <page name='Iterating'/>
         <page name='Filter'/>
         <page name='For each and enumeration'/>
+        <page name='Lazy Iteration'/>
     </pages>
 </playground>
