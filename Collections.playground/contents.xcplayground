@@ -7,5 +7,6 @@
         <page name='Lazy Iteration'/>
         <page name='Reduce'/>
         <page name='Reduce Into'/>
+        <page name='Zip'/>
     </pages>
 </playground>
