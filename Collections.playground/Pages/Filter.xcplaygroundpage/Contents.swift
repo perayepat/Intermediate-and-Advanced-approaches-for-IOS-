@@ -13,7 +13,7 @@ struct Movie{
     let genre: String
 }
 
-let movies = [Movie(title: "Lord of the rings", genre: "Fiction"),
+var movies = [Movie(title: "Lord of the rings", genre: "Fiction"),
               Movie(title: "ET", genre: "Fiction"),
               Movie(title: "Finding Nemo", genre: "Kids"),
               Movie(title: "Cars", genre: "Kids")]
@@ -22,4 +22,14 @@ let kisMovies = movies.filter { movie in
     return movie.genre == "Kids"
 }
 
+///Removing items
+let movieToRemove = Movie(title: "Finding Nemo", genre: "Kids")
+
+movies = movies.filter { movie in
+    return movie.title != movieToRemove.title
+}
+
+for movie in movies {
+    print(movie)
+}
 //: [Next](@next)
