@@ -3,5 +3,6 @@
     <pages>
         <page name='Iterating'/>
         <page name='Filter'/>
+        <page name='For each and enumeration'/>
     </pages>
 </playground>
