@@ -104,3 +104,4 @@ func checkIn(ticket: Ticket){
 }
 
 checkIn(ticket: ticket)
+/// for a system with an individual look up or output that needs to be able to handle multiple inputs of varying types
