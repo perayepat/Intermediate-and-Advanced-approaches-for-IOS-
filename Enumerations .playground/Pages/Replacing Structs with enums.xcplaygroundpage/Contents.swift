@@ -50,3 +50,5 @@ func displaySession(session: Sessions){
 
 let secondKeynote = Sessions.keynote(title: "WWDC ", speaker: "Tim", date: Date(), isRecorded: true)
 
+displaySession(session: secondKeynote)
+
