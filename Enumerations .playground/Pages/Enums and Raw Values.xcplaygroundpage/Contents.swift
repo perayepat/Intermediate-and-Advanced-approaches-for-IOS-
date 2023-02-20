@@ -37,20 +37,29 @@ import Foundation
 //}
 
 //MARK: - From the swift in depth book
-
+/// how to accomdate for the jpeg and jpg
 enum ImageType: String {
     case jpg
     case bmp
     case png
+    
+    init?(rawValue: String) {
+        switch rawValue.lowercased(){
+        case "jpg", "jpeg": self = .jpg
+        case "bmp", "bitmap": self = .bmp
+        case "png": self = .png
+        default: return nil
+        }
+    }
 }
 
 func iconName(for fileExtension: String) -> String{
-//    switch fileExtension{
-//    case "jpg": return "assetJPG"
-//    case "bmp": return "assetBMP"
-//    case "png": return "assetPNG"
-//    default: return "assetUnknown"
-//    }
+    //    switch fileExtension{
+    //    case "jpg": return "assetJPG"
+    //    case "bmp": return "assetBMP"
+    //    case "png": return "assetPNG"
+    //    default: return "assetUnknown"
+    //    }
     
     guard let imageType = ImageType(rawValue: fileExtension) else {
         return "assetUnknown"
@@ -63,5 +72,6 @@ func iconName(for fileExtension: String) -> String{
     }
 }
 
+/// Now the accommodation has been made
 iconName(for: "jpg")
 iconName(for: "jpeg")
