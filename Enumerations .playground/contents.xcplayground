@@ -4,5 +4,6 @@
         <page name='Replacing Structs with enums'/>
         <page name='Hiding Types using enums '/>
         <page name='AirplaneTicket'/>
+        <page name='Teacher and Student'/>
     </pages>
 </playground>
