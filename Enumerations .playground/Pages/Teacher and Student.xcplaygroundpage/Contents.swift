@@ -4,9 +4,8 @@ class User{
     var name: String
     var isFullTime: Bool
     
-    init(name: String, courses: [String], isFullTime: Bool) {
+    init(name: String, isFullTime: Bool) {
         self.name = name
-        self.courses = courses
         self.isFullTime = isFullTime
     }
 }
@@ -19,7 +18,7 @@ class Staff: User{
 class Teacher: User {
     var courses: [String]
     
-    init(name: String, courses: [String], isFullTime: Bool) {
+     init(name: String, courses: [String], isFullTime: Bool) {
         self.courses = courses
         super.init(name: name, isFullTime: isFullTime)
     }
@@ -28,7 +27,7 @@ class Teacher: User {
 class Student: User {
     var courses: [String]
     
-    init(name: String, courses: [String], isFullTime: Bool) {
+     init(name: String, courses: [String], isFullTime: Bool) {
         self.courses = courses
         super.init(name: name, isFullTime: isFullTime)
     }
