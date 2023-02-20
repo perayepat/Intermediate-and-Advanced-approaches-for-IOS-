@@ -38,13 +38,30 @@ import Foundation
 
 //MARK: - From the swift in depth book
 
+enum ImageType: String {
+    case jpg
+    case bmp
+    case png
+}
+
 func iconName(for fileExtension: String) -> String{
-    switch fileExtension{
-    case "jpg": return "assetJPG"
-    case "bmp": return "assetBMP"
-    case "png": return "assetPNG"
-    default: return "assetUnknown"
+//    switch fileExtension{
+//    case "jpg": return "assetJPG"
+//    case "bmp": return "assetBMP"
+//    case "png": return "assetPNG"
+//    default: return "assetUnknown"
+//    }
+    
+    guard let imageType = ImageType(rawValue: fileExtension) else {
+        return "assetUnknown"
+    }
+    
+    switch imageType{
+    case .jpg: return "assetJPG"
+    case .bmp: return "assetBMP"
+    case .png: return "assetPNG"
     }
 }
 
 iconName(for: "jpg")
+iconName(for: "jpeg")
