@@ -60,7 +60,7 @@ struct International{
     let countryOfOrigin: String
 }
 
-/// This allows extenstion to be done easier and more simple 
+/// This allows extenstion to be done easier and more simple
 enum User{
     case student(Student)
     case teacher(Teacher)
@@ -82,3 +82,5 @@ func updateProfile(user: User){
 }
 
 updateProfile(user: User.staff(Staff(name: "Jung Gou", isFullTime: false)))
+
+/// For structs where you may have the same base types but additions will change each struct slighty associated types are for this situation
