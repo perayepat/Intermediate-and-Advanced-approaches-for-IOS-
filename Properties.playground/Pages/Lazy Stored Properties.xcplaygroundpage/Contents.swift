@@ -10,9 +10,9 @@ enum Level{
 struct Exam{
     var level: Level
     
-    var questions: [String]{
+    lazy var questions :[String] = {
         //simulate time to get from API
-        sleep(5)
+        sleep(2)
         switch level{
         case .easy:
             return ["What is 1+2","What is a question"]
@@ -21,9 +21,9 @@ struct Exam{
         case .hard:
             return ["What is 8 / 2 ", "When does conciousness form"]
         }
-    }
+    }()
 }
 
-let exam = Exam(level: .easy)
+var exam = Exam(level: .easy)
 print(exam.questions)
 
