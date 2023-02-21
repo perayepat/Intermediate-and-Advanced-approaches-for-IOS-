@@ -2,6 +2,13 @@ import Foundation
 
 /// How do you fire off another action when you set a variable in your code
 struct Website{
+    
+    init(url: String) {
+        //USing 
+        defer { self.url = url}
+        self.url = url
+    }
+    
     var url: String{
         /// when we set this property fire off code somewhere else
         didSet{
@@ -11,6 +18,5 @@ struct Website{
 }
 
 var website = Website(url: "www.movies.com/?search=J J K")
-website.url = "www.movies.com/?search=J J K"
 print(website)
 
