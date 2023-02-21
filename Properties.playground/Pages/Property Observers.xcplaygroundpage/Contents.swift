@@ -4,12 +4,15 @@ import Foundation
 struct Website{
     
     init(url: String) {
-        //USing 
+        //USing
         defer { self.url = url}
         self.url = url
     }
     
     var url: String{
+        willSet{
+            newValue
+        }
         /// when we set this property fire off code somewhere else
         didSet{
             url = url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? url
