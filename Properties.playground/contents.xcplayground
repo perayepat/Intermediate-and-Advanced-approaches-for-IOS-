@@ -3,5 +3,6 @@
     <pages>
         <page name='Lazy Stored Properties'/>
         <page name='Computed Properties'/>
+        <page name='Property Observers'/>
     </pages>
 </playground>
