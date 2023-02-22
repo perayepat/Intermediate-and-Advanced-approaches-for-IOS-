@@ -10,6 +10,7 @@
 		43AAE92A29A5DB8C00B2D75B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAE92929A5DB8C00B2D75B /* main.swift */; };
 		43AAE93129A5DBB700B2D75B /* Getting Started.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAE93029A5DBB700B2D75B /* Getting Started.swift */; };
 		43AAE93329A5DD3B00B2D75B /* ConvenienceInitialisers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAE93229A5DD3B00B2D75B /* ConvenienceInitialisers.swift */; };
+		43AAE93529A5DE0600B2D75B /* SubClassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AAE93429A5DE0600B2D75B /* SubClassing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		43AAE92929A5DB8C00B2D75B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		43AAE93029A5DBB700B2D75B /* Getting Started.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Getting Started.swift"; sourceTree = "<group>"; };
 		43AAE93229A5DD3B00B2D75B /* ConvenienceInitialisers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvenienceInitialisers.swift; sourceTree = "<group>"; };
+		43AAE93429A5DE0600B2D75B /* SubClassing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubClassing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				43AAE92929A5DB8C00B2D75B /* main.swift */,
 				43AAE93029A5DBB700B2D75B /* Getting Started.swift */,
 				43AAE93229A5DD3B00B2D75B /* ConvenienceInitialisers.swift */,
+				43AAE93429A5DE0600B2D75B /* SubClassing.swift */,
 			);
 			path = Initializers;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				43AAE92A29A5DB8C00B2D75B /* main.swift in Sources */,
 				43AAE93129A5DBB700B2D75B /* Getting Started.swift in Sources */,
+				43AAE93529A5DE0600B2D75B /* SubClassing.swift in Sources */,
 				43AAE93329A5DD3B00B2D75B /* ConvenienceInitialisers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

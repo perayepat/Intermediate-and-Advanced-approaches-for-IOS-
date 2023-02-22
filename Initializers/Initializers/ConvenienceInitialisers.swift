@@ -11,7 +11,10 @@ class Car {
         self.color = color
     }
     
+    //Sets some defaults and allows the caller to set arguments when they want
     convenience init(make: String , model: String){
         self.init(make: make, model: model, color: "White")
     }
+    
+    
 }
