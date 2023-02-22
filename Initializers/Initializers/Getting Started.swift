@@ -6,7 +6,7 @@ struct Student {
     let grade: String
 }
 
-
+/// Using extensions allow you to keep the default initialiser in the structs
 extension Student{
     init(FirstName: String, lastName: String) {
         self.FirstName = FirstName
