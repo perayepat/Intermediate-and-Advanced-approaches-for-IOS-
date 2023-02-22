@@ -14,7 +14,7 @@ struct Student: CustomStringConvertible{
         }
         
         if let grade = grade{
-            studentDescription.append(" \(grade)")
+            studentDescription.append("  \(grade)")
         }
         return studentDescription
     }
