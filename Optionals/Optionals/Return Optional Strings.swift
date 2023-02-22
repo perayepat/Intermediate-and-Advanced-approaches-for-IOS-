@@ -15,8 +15,10 @@ struct UniStudent{
     
     func createGreetingMessage() -> String{
         let message = """
-            Dear \(displayName), welcome to swift
+            Dear \(displayName ?? "Srudent"), welcome to swift
         """
         return message
     }
+    
 }
+
