@@ -36,3 +36,11 @@ do {
 }catch{
     print(error)
 }
+
+// exposing our type and using validation in the initializer
+do {
+    let email = try Email("jungDoube@gmail.com")
+    print(email)
+} catch {
+    print(error)
+}
