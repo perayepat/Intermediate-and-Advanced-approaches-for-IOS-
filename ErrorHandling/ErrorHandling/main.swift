@@ -25,3 +25,14 @@ import Foundation
 //        print(error)
 //    }
 //}
+
+//MARK: - Validating user email
+
+let validation = Validation()
+
+do {
+    try validation.validateEmail("jungDoube@gmail.com")
+    print("Email is valid")
+}catch{
+    print(error)
+}

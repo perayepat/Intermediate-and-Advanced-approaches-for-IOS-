@@ -11,6 +11,7 @@
 		43224FBD29AA771A0054A0C5 /* Throwing Errors Example 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43224FBC29AA771A0054A0C5 /* Throwing Errors Example 1.swift */; };
 		43224FBF29AA7A0D0054A0C5 /* Throwing Errors Example 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43224FBE29AA7A0D0054A0C5 /* Throwing Errors Example 2.swift */; };
 		43224FC129AA80B80054A0C5 /* Error Handling Using Do Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43224FC029AA80B80054A0C5 /* Error Handling Using Do Catch.swift */; };
+		43224FC329AA83F70054A0C5 /* User Input as type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43224FC229AA83F70054A0C5 /* User Input as type.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		43224FBC29AA771A0054A0C5 /* Throwing Errors Example 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Throwing Errors Example 1.swift"; sourceTree = "<group>"; };
 		43224FBE29AA7A0D0054A0C5 /* Throwing Errors Example 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Throwing Errors Example 2.swift"; sourceTree = "<group>"; };
 		43224FC029AA80B80054A0C5 /* Error Handling Using Do Catch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error Handling Using Do Catch.swift"; sourceTree = "<group>"; };
+		43224FC229AA83F70054A0C5 /* User Input as type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Input as type.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		43224FA929AA76DA0054A0C5 = {
 			isa = PBXGroup;
 			children = (
+				43224FC229AA83F70054A0C5 /* User Input as type.swift */,
 				43224FC029AA80B80054A0C5 /* Error Handling Using Do Catch.swift */,
 				43224FBE29AA7A0D0054A0C5 /* Throwing Errors Example 2.swift */,
 				43224FB429AA76DB0054A0C5 /* ErrorHandling */,
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43224FBD29AA771A0054A0C5 /* Throwing Errors Example 1.swift in Sources */,
+				43224FC329AA83F70054A0C5 /* User Input as type.swift in Sources */,
 				43224FC129AA80B80054A0C5 /* Error Handling Using Do Catch.swift in Sources */,
 				43224FBF29AA7A0D0054A0C5 /* Throwing Errors Example 2.swift in Sources */,
 				43224FB629AA76DB0054A0C5 /* main.swift in Sources */,
