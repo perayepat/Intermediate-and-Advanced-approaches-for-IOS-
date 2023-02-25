@@ -13,15 +13,15 @@ import Foundation
 //}
 
 //MARK: - Throwing Networking Errors
-let networking = Networking()
-
-print("Running Network")
-networking.getPosts { (result) in
-    switch result {
-    case .success(let posts):
-        print(posts)
-        print("In Progress")
-    case .failure(let error):
-        print(error)
-    }
-}
+//let networking = Networking()
+//
+//print("Running Network")
+//networking.getPosts { (result) in
+//    switch result {
+//    case .success(let posts):
+//        print(posts)
+//        print("In Progress")
+//    case .failure(let error):
+//        print(error)
+//    }
+//}
