@@ -2,13 +2,26 @@ import Foundation
 
 //MARK: - Throwing errors example 1
 
-let account = BankAcount(balance: 100.50)
+//let account = BankAcount(balance: 100.50)
+//
+///// accounting for the error
+//
+//do {
+//    try account.withdraw(amount: 300)
+//} catch {
+//    print(error)
+//}
 
-/// accounting for the error
+//MARK: - Throwing Networking Errors
+let networking = Networking()
 
-do {
-    try account.withdraw(amount: 300)
-} catch {
-    print(error)
+print("Running Network")
+networking.getPosts { (result) in
+    switch result {
+    case .success(let posts):
+        print(posts)
+        print("In Progress")
+    case .failure(let error):
+        print(error)
+    }
 }
-
