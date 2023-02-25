@@ -29,18 +29,23 @@ import Foundation
 //MARK: - Validating user email
 
 let validation = Validation()
-
-do {
-    try validation.validateEmail("jungDoube@gmail.com")
-    print("Email is valid")
-}catch{
-    print(error)
-}
+// 
+//do {
+//    try validation.validateEmail("jungDoube@gmail.com")
+//    print("Email is valid")
+//}catch{
+//    print(error)
+//}
 
 // exposing our type and using validation in the initializer
+// This means we are interested in
 do {
     let email = try Email("jungDoube@gmail.com")
     print(email)
 } catch {
     print(error)
 }
+
+// We arent interested in the error we get and we return nill
+let email = try? Email("Jibly.com")
+print(email)
