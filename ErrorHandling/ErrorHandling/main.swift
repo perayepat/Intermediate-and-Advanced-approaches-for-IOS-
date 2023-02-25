@@ -1,11 +1,14 @@
-//
-//  main.swift
-//  ErrorHandling
-//
-//  Created by Pat on 2023/02/25.
-//
-
 import Foundation
 
-print("Hello, World!")
+//MARK: - Throwing errors example 1
+
+let account = BankAcount(balance: 100.50)
+
+/// accounting for the error
+
+do {
+    try account.withdraw(amount: 300)
+} catch {
+    print(error)
+}
 
