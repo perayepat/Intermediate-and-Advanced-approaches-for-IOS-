@@ -5,9 +5,12 @@ struct Pizza  {
     let toppings: [String]
 }
 
+/*
+ Our enums can take arguments to make sense of the errors
+ */
 enum PizzaBuilderError: Error{
     case doughBurnt
-    case noToppings
+    case noToppings(String)
 }
 
 struct PizzaBuilder{
@@ -35,7 +38,7 @@ struct PizzaBuilder{
     }
     private func prepareToppings() throws -> [String] {
         // Prepare the toppings
-        throw PizzaBuilderError.noToppings
+        throw PizzaBuilderError.noToppings("We dont have chicken, please dont roit")
     }
     
     
